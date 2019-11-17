@@ -1,6 +1,66 @@
 .hero
+  padding-top: 211px
+  padding-bottom: 45px
   background-image: url('../img/hero/hero_bg.png'), url('../img/hero/hero_bg2.jpg')
   background-position: top center
-  background-size: 100%
+  background-size: cover
   background-repeat: no-repeat
-  min-height: 742px
+  margin-bottom: 133px
+  +reg
+  &-slider
+    width: 100%
+  &-slide
+    outline: none
+    width: 100%
+  &__dots
+    list-style: none
+    text-align: center
+    margin-top: 207px
+    & li
+      margin: 0 10px
+      width: 20px
+      height: 20px
+      background-color: #ffffff
+      display: inline-block
+      button
+        display: none
+    .slick-active
+      background-color: $main-color
+  &__title
+    color: $main-color
+    +semi
+    font-size: 35px
+    font-weight: 400
+    text-transform: uppercase
+    margin-bottom: 22px
+  &__subtitle
+    display: block
+    color: #fffffe
+    font-size: 35px
+    margin-bottom: 41px
+  &__text
+    display: block
+    opacity: 0.42
+    color: #fffffe
+    font-size: 20px
+    line-height: 28px
+    margin-bottom: 53px
+  &__button
+    padding: 15px 37px
+    +semi
+    color: #030303
+    font-size: 18px
+
+@media (max-width: 991.98px)
+  .hero
+    padding-top: 100px
+    &__title
+      font-size: 28px
+    &__subtitle
+      font-size: 24px
+      margin-bottom: 10px
+    &__text
+      line-height: 1.2
+      font-size: 16px
+    &__dots
+      margin-top: 100px

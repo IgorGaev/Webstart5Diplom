@@ -1,7 +1,7 @@
 .header
   background-image: url('../img/header/header_bg.png')
   background-position: center right
-  background-size: 42%
+  background-size: 37%
   background-repeat: repeat-y
   &-block
     +reg
@@ -20,6 +20,7 @@
   &-navbar
     display: flex
     &__item
+      list-style-type: none
       position: relative
       padding-right: 30px
       padding-left: 30px  
@@ -49,6 +50,7 @@
       font-size: 16px  
       position: relative
       &:hover
+        color: $main-color
         &::after
           display: block
           content: ''
@@ -57,7 +59,7 @@
           background-color: $main-color
           position: absolute
           left: 0
-          bottom: -7px
+          bottom: -2px
           z-index: -1
           transition: 0.2s
   &__contacts
@@ -73,4 +75,67 @@
     padding: 7px 15px
     color: #030303
     font-size: 14px
+    text-transform: none
 
+.menu-trigger 
+  display: none
+  color: $black-text
+  +bold
+  font-size: 16px  
+
+@media (max-width: 1199.98px)
+  .header
+    background-size: 42%
+    &__logo
+      margin-right: 30px
+    &-navbar
+      &__link
+        &:hover
+          color: $black-text
+          &::after
+            display: none
+      &__item
+        padding-right: 20px
+        padding-left: 20px  
+        &:first-child
+          padding-right: 20px
+        &:last-child
+          padding-left: 20px
+
+@media (max-width: 991.98px)
+  .header
+    background-size: 0%
+    &-navbar
+      &__link
+    &__contacts
+      display: none
+    &__button
+        padding: 7px 10px
+        font-size: 12px
+        margin-left: 0px    
+
+@media (max-width: 767.98px)
+
+  .menu-trigger 
+    display: block
+
+  .header
+    &-navbar
+      display: none
+      flex-direction: column
+      &__item
+        padding: 0px
+        &::after
+          display: none
+        &:first-child
+          padding: 0px
+        &:last-child
+          padding: 0px
+    &__button
+      +bold
+      padding: 7px 10px
+      font-size: 12px
+      margin-left: 0px
+
+
+  
