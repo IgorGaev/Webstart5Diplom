@@ -345,6 +345,7 @@ template {
 .container {
   width: 1170px;
   margin: auto;
+  position: relative;
 }
 
 * {
@@ -368,7 +369,7 @@ img {
 }
 
 .section__title {
-  position: relative;
+  position: absolute;
   top: -30px;
   left: -30px;
   display: inline-block;
@@ -380,6 +381,7 @@ img {
   color: #020202;
   font-family: 'Proxima Nova Semi', sans-serif;
   font-size: 28px;
+  z-index: 6;
 }
 
 .button {
@@ -596,6 +598,7 @@ img {
   background-position: center right;
   background-size: 37%;
   background-repeat: repeat-y;
+  min-height: 76px;
 }
 
 .header-block {
@@ -813,11 +816,142 @@ img {
   }
 }
 
+.why {
+  background-color: #f1f1f1;
+  position: relative;
+  margin-bottom: 146px;
+}
+
+.why::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+.why__title {
+  padding: 16px 28px;
+}
+
+.why-block {
+  padding-top: 92px;
+  padding-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.why-items {
+  max-width: 667px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.why-items__item {
+  width: 198px;
+  height: 168px;
+  background-color: #ffffff;
+  margin-bottom: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.why-items__image {
+  margin-top: 20px;
+  margin-bottom: 12px;
+}
+
+.why-items__text {
+  font-family: "Proxima Nova Rg", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  color: #020202;
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: uppercase;
+}
+
+.why-list {
+  max-width: 434px;
+  list-style-type: none;
+  list-style-position: inside;
+  padding-left: 20px;
+}
+
+.why-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.why-list__number {
+  color: #ffc800;
+  font-size: 34px;
+  text-transform: uppercase;
+  font-family: "Proxima Nova Bl", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  margin-bottom: 77px;
+}
+
+.why-list__number::after {
+  display: inline-block;
+  margin-left: 7px;
+  margin-right: 7px;
+  content: '';
+  width: 29px;
+  height: 2px;
+  background-color: #000000;
+  margin-bottom: 12px;
+}
+
+.why-list__item:last-child .why-list__number {
+  margin-bottom: 0px;
+}
+
+.why-list__text {
+  margin-top: 5px;
+  font-family: 'Proxima Nova Semi', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #020202;
+  font-size: 20px;
+  line-height: 25px;
+  width: 82%;
+}
+
 /* ===================================================== */
 /* Hero */
 .hero {
-  padding-top: 211px;
-  padding-bottom: 45px;
+  padding-top: 181px;
+  padding-bottom: 41px;
   background-image: url("../img/hero/hero_bg.png"), url("../img/hero/hero_bg2.jpg");
   background-position: top center;
   background-size: cover;
@@ -844,7 +978,7 @@ img {
 }
 
 .hero__dots li {
-  margin: 0 10px;
+  margin: 0 6px;
   width: 20px;
   height: 20px;
   background-color: #ffffff;
@@ -867,14 +1001,14 @@ img {
   font-size: 35px;
   font-weight: 400;
   text-transform: uppercase;
-  margin-bottom: 22px;
+  margin-bottom: 12px;
 }
 
 .hero__subtitle {
   display: block;
   color: #fffffe;
   font-size: 35px;
-  margin-bottom: 41px;
+  margin-bottom: 24px;
 }
 
 .hero__text {
@@ -883,11 +1017,11 @@ img {
   color: #fffffe;
   font-size: 20px;
   line-height: 28px;
-  margin-bottom: 53px;
+  margin-bottom: 51px;
 }
 
 .hero__button {
-  padding: 15px 37px;
+  padding: 12px 37px;
   font-family: 'Proxima Nova Semi', sans-serif;
   font-weight: 600;
   font-style: normal;
@@ -925,11 +1059,12 @@ img {
 /* Блок services */
 .service {
   background-color: #f1f1f1;
+  margin-bottom: 146px;
 }
 
 .service-block {
-  margin-top: 104px;
-  padding-bottom: 117px;
+  padding-top: 104px;
+  padding-bottom: 98px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -948,7 +1083,7 @@ img {
   font-style: normal;
   position: relative;
   max-width: 377px;
-  margin-bottom: 21px;
+  margin-bottom: 14px;
 }
 
 .service-card:hover {
@@ -975,8 +1110,8 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 63px;
-  padding-bottom: 68px;
+  padding-top: 55px;
+  padding-bottom: 70px;
 }
 
 .service-card__subtitle {

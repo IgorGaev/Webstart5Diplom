@@ -1,9 +1,7 @@
 .container
   width: 1170px
   margin: auto
-
-
-
+  position: relative
 
 *
   box-sizing: border-box
@@ -21,7 +19,7 @@ img
   max-width: 100%
 
 .section__title
-  position: relative
+  position: absolute
   top: -30px
   left: -30px
   display: inline-block
@@ -33,6 +31,7 @@ img
   color: $text-color
   font-family: 'Proxima Nova Semi', sans-serif
   font-size: 28px
+  z-index: 6
 
 .button
   background-color: $main-color

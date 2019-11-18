@@ -60,6 +60,11 @@
   font-weight: 700;
   font-style: normal;
 }
+@mixin black {
+  font-family: "Proxima Nova Bl", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
 @mixin semi {
   font-family: 'Proxima Nova Semi', sans-serif;
   font-weight: 600;
