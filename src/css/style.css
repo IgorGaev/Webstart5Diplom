@@ -367,7 +367,7 @@ img {
   max-width: 100%;
 }
 
-.service__title {
+.section__title {
   position: relative;
   top: -30px;
   left: -30px;
@@ -411,6 +411,14 @@ img {
   }
   .container {
     max-width: 720px;
+  }
+  .section__title {
+    top: -20px;
+    left: -20px;
+    padding: 10px 43px;
+    width: 170px;
+    height: 40px;
+    font-size: 20px;
   }
 }
 
@@ -890,6 +898,7 @@ img {
 @media (max-width: 991.98px) {
   .hero {
     padding-top: 100px;
+    margin-bottom: 60px;
   }
   .hero__title {
     font-size: 28px;
@@ -905,6 +914,11 @@ img {
   .hero__dots {
     margin-top: 100px;
   }
+  .hero__dots li {
+    margin: 0 10px;
+    width: 10px;
+    height: 10px;
+  }
 }
 
 /* ======================================================= */
@@ -915,7 +929,7 @@ img {
 
 .service-block {
   margin-top: 104px;
-  margin-bottom: 117px;
+  padding-bottom: 117px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1003,6 +1017,71 @@ img {
   top: 0;
   left: 0;
   background-color: #000000;
+}
+
+@media (max-width: 1199.98px) {
+  .service-block {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .service-card {
+    margin-bottom: 21px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .service-block {
+    margin-top: 50px;
+    padding-bottom: 60px;
+  }
+  .service-card {
+    max-width: 350px;
+    margin-bottom: 10px;
+  }
+  .service-card:hover {
+    -webkit-filter: none;
+            filter: none;
+  }
+  .service-card__text {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+  .service-card__subtitle {
+    line-height: 20px;
+    font-size: 18px;
+  }
+  .service-card__button {
+    font-size: 12px;
+  }
+  .service-card__button:hover::after {
+    display: none;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .service-block {
+    margin-top: 30px;
+    padding-bottom: 30px;
+  }
+  .service-card {
+    max-width: 377px;
+  }
+  .service-card__text {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+  .service-card__subtitle {
+    line-height: 18px;
+    font-size: 16px;
+  }
+  .service-card__button {
+    font-size: 12px;
+  }
+  .service-block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 /* ======================================================= */
