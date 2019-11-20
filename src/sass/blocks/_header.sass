@@ -115,23 +115,38 @@
         font-size: 12px
         margin-left: 0px    
 
-@media (max-width: 767.98px)
+@media (max-width: 768px)
 
   .menu-trigger 
     display: block
 
   .header
     &-navbar
+      padding-top: 10px
+      padding-bottom: 10px
+      margin-top: 30px
       display: none
       flex-direction: column
+      position: absolute
+      background: $section-grey
+      width: 60%
+      margin-left: -10px
+      padding-left: 10px
+      z-index: 6
+      opacity: 0.9
+      +bold
       &__item
         padding: 0px
+        margin-bottom: 5px
         &::after
           display: none
         &:first-child
           padding: 0px
         &:last-child
           padding: 0px
+      &__link
+        font-size: 18px
+        text-transform: uppercase
     &__button
       +bold
       padding: 7px 10px

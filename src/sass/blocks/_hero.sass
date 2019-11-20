@@ -1,6 +1,6 @@
 .hero
   padding-top: 181px
-  padding-bottom: 41px
+  padding-bottom: 272px
   background-image: url('../img/hero/hero_bg.png'), url('../img/hero/hero_bg2.jpg')
   background-position: top center
   background-size: cover
@@ -9,13 +9,19 @@
   +reg
   &-slider
     width: 100%
+    position: relative
   &-slide
     outline: none
     width: 100%
+  &-block
+    width: 100%
   &__dots
+    position: absolute
+    bottom: 170px
+    left: 50%
+    transform: translateX(-50%)
     list-style: none
     text-align: center
-    margin-top: 207px
     & li
       margin: 0 6px
       width: 20px
@@ -69,3 +75,11 @@
         margin: 0 10px
         width: 10px
         height: 10px
+
+.slide2
+  background-image: url('../img/hero/hero_bg4.png'), url('../img/hero/hero_bg2.jpg')
+.slide3
+  background-image: url('../img/hero/hero_bg5.png'), url('../img/hero/hero_bg2.jpg')
+.slide4
+  background-image: url('../img/hero/hero_bg6.png'), url('../img/hero/hero_bg2.jpg')
+  
