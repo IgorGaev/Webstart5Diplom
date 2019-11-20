@@ -6,4 +6,11 @@ $(document).ready(function () {
     autoplaySpeed: 4000,
     dotsClass: "hero__dots"
   });
+  $('.reviews-slider').slick({
+    autoplay: 0,
+    dots: true,
+    arrows: false,
+    dotsClass: "reviews__dots"
+  });
+
 })

@@ -1,0 +1,74 @@
+.review-block
+  display: flex
+  flex-direction: column
+  align-items: center
+  width: 44%
+.review  
+  &__avatar
+    width: 116px
+    height: 116px
+    border-radius: 50%
+    margin-bottom: 19px
+  &__name
+    color: $main-color
+    margin-bottom: 25px
+    +semi
+    font-size: 20px
+    font-weight: 400
+    line-height: 28px
+  &__text
+    color: #fffffd
+    +reg
+    font-size: 20px
+    font-weight: 400
+    line-height: 28px
+    text-align: center
+    margin-bottom: 28px
+  &-likes
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    width: 30%
+  &-like
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    &__count
+      margin-left: 5px
+      +reg
+      color: #fefbfb
+      font-size: 15px
+
+.reviews
+  margin-top: 146px
+  background-color: #010101
+  &-block
+    display: flex
+    justify-content: space-between
+    padding-top: 112px
+    padding-bottom: 172px
+  &-slider
+    width: 100%
+    position: relative
+  &-slide
+    outline: none
+    width: 100%
+  &-block
+    width: 100%
+  &__dots
+    position: absolute
+    bottom: 45px
+    left: 50%
+    transform: translateX(-50%)
+    list-style: none
+    text-align: center
+    & li
+      margin: 0 6px
+      width: 20px
+      height: 20px
+      background-color: #ffffff
+      display: inline-block
+      button
+        display: none
+    .slick-active
+      background-color: $main-color
