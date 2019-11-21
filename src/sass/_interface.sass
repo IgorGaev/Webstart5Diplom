@@ -18,6 +18,32 @@ a
 img 
   max-width: 100%
 
+.input-wrap
+  position: relative
+  display: flex
+  flex-direction: column
+  align-items: center
+  margin-bottom: 40px
+
+
+main
+  z-index: 1     
+
+input.invalid
+  display: block
+  border: 1px solid red
+  &:focus
+    border: 1px solid red
+    
+label.invalid
+  position: absolute
+  bottom: -14px
+  width: 100%
+  display: block
+  text-align: left
+  font-size: 14px
+  color: red  
+
 .section__title
   position: absolute
   top: -30px

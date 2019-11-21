@@ -1,0 +1,173 @@
+.footer
+  background-color: $black-text
+  &-block
+    min-height: 134px
+    +reg
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &-adress
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    &__icon
+      width: 15px
+      height: 21px
+      margin-right: 13px 
+    &__text
+      color: #fdfcfc
+      font-size: 20px
+      line-height: 28px
+  &-social
+    display: flex
+    align-items: center
+    padding-left: 50px
+    &__icon
+      border-radius: 50%
+      width: 26px
+      height: 26px
+      margin-right: 10px
+      &:hover
+        background-color: $main-color        
+  &-info
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    & a
+      color: #fefefe
+      font-size: 18px
+    &__stock
+      width: 1px
+      height: 15px
+      margin-right: 15px
+      margin-left: 15px
+      background-color: #ffffff
+      opacity: 0.33
+  &-mail
+    display: flex
+    align-items: center
+    &__icon
+      width: 20px
+      height: 14px
+      margin-right: 10px 
+    &__text
+  &-phone
+    display: flex
+    align-items: center
+    &__icon
+      width: 18px
+      height: 18px
+      margin-right: 6px
+    &__text
+      text-transform: uppercase
+  &-form
+    padding-top: 51px
+    padding-bottom: 58px
+    padding-right: 47px
+    padding-left: 47px
+    text-align: center
+    position: absolute
+    top: -500px
+    left: 0
+    background-color: #ffffff
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4)
+    width: 397px
+    height: 385px
+    &__title
+      color: #030303
+      +ext
+      font-size: 20px
+      text-transform: uppercase
+      margin-bottom: 53px
+      & strong
+        color: $main-color
+    &__input
+      outline: none
+      width: 100%
+      border: 1px solid $black-text
+      border-left: none
+      border-right: none
+      border-top: none
+      color: $text-color
+      +reg
+      font-style: italic
+      font-size: 18px
+      line-height: 28px
+      opacity: 0.65
+    &__button
+      +bold
+      width: 100%
+      height: 58px
+      color: $text-color
+      font-size: 20px
+      text-transform: uppercase
+
+@media (max-width: 991.98px)
+  .footer
+    &-form
+      width: 345px
+      height: 365px
+      padding: 25px
+      top: -450px
+    &-block  
+      flex-direction: column
+      justify-content: space-around
+
+@media (max-width: 767.98px)
+  .footer
+    &-block
+      padding: 10px 0
+    &-adress
+      &__text
+        font-size: 18px
+    &-social
+      &__icon
+        margin-right: 20px
+    &-info
+      & a
+        font-size: 16px    
+
+@media ( max-width: 450px )
+  .footer
+    &-block
+    &-adress
+      margin-bottom: 15px
+      &__text
+        font-size: 15px
+    &-social
+      margin-bottom: 15px    
+    &-info
+      flex-direction: column
+      &__stock
+        display: none
+    &-mail
+      margin-bottom: 15px
+    &-form
+      margin-top: 30px
+      margin-bottom: 30px
+      width: 100%
+      position: static
+      height: 200px
+      &__title
+        color: #030303
+        +ext
+        font-size: 18px
+        text-transform: uppercase
+        margin-bottom: 25px
+      &__input
+        +reg
+        font-style: italic
+        font-size: 14px
+        line-height: 1.2
+      &__button
+        +bold
+        width: 100%
+        height: 30px
+        color: $text-color
+        font-size: 16px
+        text-transform: uppercase
+      .input-wrap
+        margin-bottom: 20px
+      
+
+

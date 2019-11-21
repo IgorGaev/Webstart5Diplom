@@ -36,7 +36,7 @@
             <a class="header__phone" href="tel:+7(863)342-22-21">+7 (863) <span
                 class="header__phone_bold">342-22-21</span></a>
           </div>
-          <button class="button header__button">Заказать звонок</button>
+          <button id="button" class=" button header__button">Заказать звонок</button>
         </div>
       </div>
       <!-- /.header-block -->
@@ -422,8 +422,7 @@
               market-driven platforms rather than excellent infrastructures. Quickly deploy best-of-breed niche markets
               without business 
             </p>
-          </div>
-          
+          </div>          
         </div>
         <!-- /.news-block -->
         <button class="button news__button">читать все новости</button>
@@ -431,8 +430,101 @@
       <!-- /.container -->
     </section>
     <!-- /.section news -->
-
   </main>
+
+  <footer class="footer">
+    <div class="map" id="map"></div>
+    <div class="container">
+      <div class="footer-form">
+        <h2 class="footer-form__title">оставьте <strong>заявку</strong></h2>
+        <form id="footer__form" action="php/mail.php" method="POST">
+          <div class="input-wrap">
+            <input name="username" type="text" class="footer-form__input input" placeholder="Введите Ваше имя">
+          </div>
+          <div class="input-wrap ">
+            <input name="phone" type="tel" class="footer-form__input phone input"
+              placeholder="Введите Ваш номер телефона">
+          </div>
+          <button type="submit" class="button footer-form__button">заказать звонок</button>
+        </form>
+      </div>
+      <div class="footer-block">
+        <a href="https://goo.gl/maps/m5RanMh9LQzSFpqz6">
+          <div class="footer-adress">
+            <div class="footer-adress__icon">
+                <img src="img/footer/geo_point.png" alt="">
+            </div>
+            <span class="footer-adress__text">г. Москва, ул. Советская 48 корп. 3</span>
+          </div>
+        </a>
+        <div class="footer-social">
+          <a href="https://www.instagram.com" class="footer-social__icon"><img src="img/footer/instagram.png" alt=""></a>
+          <a href="https://wwwvk.com" class="footer-social__icon"><img src="img/footer/vk.png" alt=""></a>
+          <a href="https://wwwodnoklassniki.ru" class="footer-social__icon"><img src="img/footer/odnoklassniki.png"alt=""></a>
+        </div>
+        <div class="footer-info">
+          <div class="footer-mail">
+            <div class="footer-mail__icon"><img src="img/footer/email.png" alt=""></div>
+            <span class="footer-mail__text"><a href="mailto:infosanteh@gmail.com">infosanteh@gmail.com</a></span>
+          </div>
+          <div class="footer-info__stock"></div>
+          <div class="footer-phone">
+            <div class="footer-phone__icon"><img src="img/footer/phone.png" alt=""></div>
+            <span class="footer-phone__text"><a href="tel:+7(863)342-22-21">+7 (863) <b>342-22-21</b></a></span>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <!-- /.container -->
+  </footer>
+  <!-- /.footer -->
+
+  <!-- Модальное окно успешной отправки формы-->
+  <div class="modal" id="modal-success">
+    <div class="modal-dialog">
+      <button class="modal-dialog__close" id="close-success">&times;</button>
+      <h2 class="modal-dialog__title">
+        Спасибо за заявку, скоро мы вам перезвоним.
+      </h2>
+    </div>
+  </div>
+
+
+  <!-- Модальное окно -->
+  <div class="modal" id="modal">
+    <div class="modal-dialog">
+      <button class="modal-dialog__close" id="close">&times;</button>
+      <h2 class="modal-dialog__title">
+        Узнайте точную стоимость ремонта по телефону!
+      </h2>
+      <form id="modal-form" action="php/mail.php" method="POST" class="modal-form">
+        <span class="modal-form__subtitle">
+          Заполните поля ниже - мы свяжемся с Вами
+        </span>
+        <div class="modal-form__inputs">
+          <div class="modal-form__input">
+            <input name="username" type="text" class="input" placeholder="Ваше имя">
+          </div>
+          <div class="modal-form__input">
+            <input name="phone" type="tel" class="phone input" placeholder="Ваш телефон">
+          </div>
+        </div>
+        <button class="button modal-form__button">
+          Узнать стоимость
+        </button>
+      </form>
+      <!-- /.modal-form -->
+      <div class="modal-info">
+        <p class="modal-info__text">
+          Или Вы можете перезвонить нам сами по&nbsp;телефону:
+        </p>
+        <a class="modal-info__phone" href="tel:+7(863)342-22-21">+7 (863) 342-22-21</a>
+      </div>
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+  <!-- /.modal -->
 
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
