@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+/* БУРГЕР МЕНЮ */
+
   $('.menu-trigger').click(function () {
     $('.header-navbar').slideToggle(500);
   }); //end slide toggle
@@ -9,6 +11,8 @@ $(document).ready(function () {
       $('.header-navbar').removeAttr('style');
     }
   }); //end resize
+
+/* ОТЛОЖЕННАЯ ЗАГРУЗКА КАРТЫ */
 
   $(window).bind('scroll', function () {
     
@@ -20,6 +24,35 @@ $(document).ready(function () {
       
     }
   });
+
+  /* Появление и закрытие модального окна */
+  var btn = document.querySelector('#button');
+  var modal = document.querySelector('#modal');
+  var modalSuccess = document.querySelector('#modal-success');
+  var close = document.querySelector('#close');
+  var closeSuccess = document.querySelector('#close-success');
+
+
+  function showModal() {
+    modal.classList.add('modal_active');
+    $("body").addClass("modal-open");
+  };
+
+  function hideModal() {
+    modal.classList.remove('modal_active');
+    $("body").removeClass("modal-open");
+  };
+
+  function hideModalSuccess() {
+    modalSuccess.classList.remove('modal_active');
+    $("body").removeClass("modal-open");
+
+  };
+
+  btn.addEventListener('click', showModal);
+  close.addEventListener('click', hideModal);
+  closeSuccess.addEventListener('click', hideModalSuccess);
+
 
   /* отправка на почту */
 
@@ -47,7 +80,7 @@ $(document).ready(function () {
     });
   });
 
-  $('#footer-form').submit(function (event) {
+  $('#footer__form').submit(function (event) {
 
     event.preventDefault(); // останавливаем собитие, прерываем
     var $form = $(this);
@@ -60,7 +93,7 @@ $(document).ready(function () {
       data: $(this).serialize(), // склеиваем все данные в одну строчку
       success: function (response) {
         console.log('Прибыли данные:' + response); // ответ в случае успеха    
-        $('#brif-form')[0].reset(); // сброс формы
+        $('#footer__form')[0].reset(); // сброс формы
         modalSuccess.classList.add('modal_active'); //выводим модальное подтверждение окно
         $("body").addClass("modal-open");
       },
@@ -70,21 +103,6 @@ $(document).ready(function () {
     });
   });
 
-/* Модальное окно */
-var btn = $('#button');
-var close = $('#close');
-var modal = $('#modal');
-var timer;
 
-$(btn).click(function () {
-  modal.addClass('modal_active');
-  // timerId = setTimeout(() => modal.removeClass('modal_active'), 5000);
-  // btn.blur();
-})
-
-$(close).click(function () {
-  modal.removeClass('modal_active');
-  clearTimeout(timerId);
-})
 
 }); //end ready
