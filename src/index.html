@@ -20,13 +20,13 @@
             <a href="index.html"><img src="img/header/header_logo.png" alt="Логотип"></a>
           </div>
           <nav>
-            <a href="#" class="menu-trigger">Меню</a>
+            <a href="#" class="menu-trigger"><img src="img/header/menu.png" alt=""></a>
             <ul class="header-navbar">
-              <li class="header-navbar__item"><a class="header-navbar__link" href="#">Услуги</a></li>
-              <li class="header-navbar__item"><a class="header-navbar__link" href="#">Цены</a></li>
-              <li class="header-navbar__item"><a class="header-navbar__link" href="#">Отзывы</a></li>
-              <li class="header-navbar__item"><a class="header-navbar__link" href="#">Новости</a></li>
-              <li class="header-navbar__item"><a class="header-navbar__link" href="#">Контакты</a></li>
+              <li class="header-navbar__item"><a class="header-navbar__link" href="#service">Услуги</a></li>
+              <li class="header-navbar__item"><a class="header-navbar__link" href="#why">Цены</a></li>
+              <li class="header-navbar__item"><a class="header-navbar__link" href="#reviews">Отзывы</a></li>
+              <li class="header-navbar__item"><a class="header-navbar__link" href="#news">Новости</a></li>
+              <li class="header-navbar__item"><a class="header-navbar__link" href="#footer">Контакты</a></li>
             </ul>
           </nav>
         </div>
@@ -36,14 +36,16 @@
             <a class="header__phone" href="tel:+7(863)342-22-21">+7 (863) <span
                 class="header__phone_bold">342-22-21</span></a>
           </div>
-          <button id="button" class=" button header__button">Заказать звонок</button>
+          <button id="button" class="button header__button">Заказать звонок</button>
         </div>
       </div>
       <!-- /.header-block -->
     </div>
     <!-- /.container -->
   </header>
+
   <main>
+      <a name="hero"></a>
     <div class="hero-slider">
       <div class="hero-slide">
         <section class="section hero slide1">
@@ -114,6 +116,7 @@
     <!-- /.hero-slider -->
 
     <section class="section service">
+      <a name="service"></a>
       <div class="container">
         <h2 class="section__title service__title">услуги</h2>
         <div class="service-block">
@@ -179,32 +182,38 @@
     <!-- /.section service -->
 
     <section class="section why">
+      <a name="why"></a>
       <div class="container">
         <h2 class="section__title why__title">почему мы?</h2>
-        <div class="why-block">
-          <div class="why-items">
-            <div class="why-items__item">
-              <div class="why-items__image"><img src="img/why/pict-1.png" alt="Иконка"></div>
+        <div class="why-block wow">
+          <div class="why-items wow fadeInLeft">
+            <div class="why-items__item ">
+              <div class="why-items__image wow animated  tada delay-5s"><img src="img/why/pict-1.png" alt="Иконка"></div>
               <span class="why-items__text">100 % гарантия качества</span>
             </div>
             <div class="why-items__item">
-              <div class="why-items__image"><img src="img/why/pict-2.png" alt="Иконка"></div>
+              <div class="why-items__image wow animated  tada delay-5s"><img
+                  src="img/why/pict-2.png"
+                  alt="Иконка"></div>
               <span class="why-items__text">с нами выгодно</span>
             </div>
             <div class="why-items__item">
-              <div class="why-items__image"><img src="img/why/pict-3.png" alt="Иконка"></div>
+              <div class="why-items__image wow animated  tada delay-5s"><img src="img/why/pict-3.png" alt="Иконка">
+              </div>
               <span class="why-items__text">большой опыт</span>
             </div>
             <div class="why-items__item">
-              <div class="why-items__image"><img src="img/why/pict-4.png" alt="Иконка"></div>
+              <div class="why-items__image wow animated  tada delay-5s"><img src="img/why/pict-4.png" alt="Иконка"></div>
               <span class="why-items__text">быстрая онлайн поддержка</span>
             </div>
             <div class="why-items__item">
-              <div class="why-items__image"><img src="img/why/pict-5.png" alt="Иконка"></div>
+              <div class="why-items__image wow animated  tada delay-5s"><img src="img/why/pict-5.png" alt="Иконка">
+              </div>
               <span class="why-items__text">с заботой о&nbsp;клиенте</span>
             </div>
             <div class="why-items__item">
-              <div class="why-items__image"><img src="img/why/pict-6.png" alt="Иконка"></div>
+              <div class="why-items__image wow animated  tada delay-5s"><img src="img/why/pict-6.png"
+                  alt="Иконка"></div>
               <span class="why-items__text">точно в срок</span>
             </div>
           </div>
@@ -224,219 +233,144 @@
     </section>
     <!-- /.section why -->
 
-    <div class="reviews-slider">
-      <div class="reviews-slide">
-        <section class="section reviews">
-          <div class="container">
-            <h2 class="section__title reviews__title">отзывы</h2>
-            <div class="reviews-block">
-              <div class="review-block">
-                <div class="review__avatar">
-                  <img src="img/reviews/girl.png" alt="Аватар">
-                  <img src="img/reviews/marker.png" alt="Маркер" class="review__marker">
-                </div>
-                <span class="review__name">Анна Говорухина</span>
-                <span class="review__text">Authoritatively incubate multidisciplinary partnerships and user friendly
-                  e-markets. Interactively whiteboard client-based leadership skills
-                </span>
-                <div class="review-likes">
-                  <div class="review-like">
-                    <img src="img/reviews/bigup.png" alt="Палец вверх" class="review-like_icon">
-                    <span class="review-like__count">211</span>
-                  </div>
-                  <div class="review-like">
-                    <img src="img/reviews/bigdown.png" alt="Палец вниз" class="review-like_icon">
-                    <span class="review-like__count">5</span>
-                  </div>
-                </div>
+    
+    <section class="section reviews">
+      <a name="reviews"></a>
+      <div class="container">
+        <h2 class="section__title reviews__title">отзывы</h2>
+        <div class="reviews-slider">
+          <div class="reviews-slide">
+            <div class="review-block">
+              <div class="review__avatar">
+                <img src="img/reviews/girl.png" alt="Аватар">
+                <img src="img/reviews/marker.png" alt="Маркер" class="review__marker">
               </div>
-              <div class="review-block">
-                <div class="review__avatar">
-                  <img src="img/reviews/boy.png" alt="Аватар">
-                  <img src="img/reviews/marker.png" alt="Маркер" class="review__marker">
+              <span class="review__name">Анна Говорухина</span>
+              <span class="review__text">Authoritatively incubate multidisciplinary partnerships and user friendly
+                e-markets. Interactively whiteboard client-based leadership skills
+              </span>
+              <div class="review-likes">
+                <div class="review-like">
+                  <a href="#"><img src="img/reviews/bigup.png" alt="Палец вверх" class="review-like_icon"></a>
+                  <span class="review-like__count">211</span>
                 </div>
-                <span class="review__name">Виктор Шукшин</span>
-                <span class="review__text"> Synergistically mesh magnetic leadership rather than cooperative best
-                  practices. Authoritatively initiate.Monotonectally actualize 24/7 metrics
-                </span>
-                <div class="review-likes">
-                  <div class="review-like">
-                    <img src="img/reviews/bigup.png" alt="Палец вверх" class="review-like_icon">
-                    <span class="review-like__count">143</span>
-                  </div>
-                  <div class="review-like">
-                    <img src="img/reviews/bigdown.png" alt="Палец вниз" class="review-like_icon">
-                    <span class="review-like__count">2</span>
-                  </div>
+                <div class="review-like">
+                  <a href="#"><img src="img/reviews/bigdown.png" alt="Палец вниз" class="review-like_icon"></a>
+                  <span class="review-like__count">5</span>
                 </div>
               </div>
             </div>
-            <!-- /.reviews-block -->
           </div>
-          <!-- container -->
-        </section>
-        <!-- /.section reviews -->
-      </div>
-      <!-- /.reviews-slide1 -->
-      <div class="reviews-slide">
-        <section class="section reviews">
-          <div class="container">
-            <h2 class="section__title reviews__title">отзывы</h2>
-            <div class="reviews-block">
-              <div class="review-block">
-                <div class="review__avatar">
-                  <img src="img/reviews/girl.png" alt="Аватар">
-                  <img src="img/reviews/marker.png" alt="Маркер" class="review__marker">
-                </div>
-                <span class="review__name">Анна Говорухина</span>
-                <span class="review__text">Authoritatively incubate multidisciplinary partnerships and user friendly
-                  e-markets. Interactively whiteboard client-based leadership skills
-                </span>
-                <div class="review-likes">
-                  <div class="review-like">
-                    <img src="img/reviews/bigup.png" alt="Палец вверх" class="review-like_icon">
-                    <span class="review-like__count">211</span>
-                  </div>
-                  <div class="review-like">
-                    <img src="img/reviews/bigdown.png" alt="Палец вниз" class="review-like_icon">
-                    <span class="review-like__count">5</span>
-                  </div>
-                </div>
+          <div class="reviews-slide">
+            <div class="review-block">
+              <div class="review__avatar">
+                <img src="img/reviews/boy.png" alt="Аватар">
+                <img src="img/reviews/marker.png" alt="Маркер" class="review__marker">
               </div>
-              <div class="review-block">
-                <div class="review__avatar">
-                  <img src="img/reviews/boy.png" alt="Аватар">
-                  <img src="img/reviews/marker.png" alt="Маркер" class="review__marker">
+              <span class="review__name">Виктор Шукшин</span>
+              <span class="review__text"> Synergistically mesh magnetic leadership rather than cooperative best
+                practices. Authoritatively initiate.Monotonectally actualize 24/7 metrics
+              </span>
+              <div class="review-likes">
+                <div class="review-like">
+                  <a href="#"><img src="img/reviews/bigup.png" alt="Палец вверх" class="review-like_icon"></a>
+                  <span class="review-like__count">143</span>
                 </div>
-                <span class="review__name">Виктор Шукшин</span>
-                <span class="review__text"> Synergistically mesh magnetic leadership rather than cooperative best
-                  practices. Authoritatively initiate.Monotonectally actualize 24/7 metrics
-                </span>
-                <div class="review-likes">
-                  <div class="review-like">
-                    <img src="img/reviews/bigup.png" alt="Палец вверх" class="review-like_icon">
-                    <span class="review-like__count">143</span>
-                  </div>
-                  <div class="review-like">
-                    <img src="img/reviews/bigdown.png" alt="Палец вниз" class="review-like_icon">
-                    <span class="review-like__count">2</span>
-                  </div>
+                <div class="review-like">
+                  <a href="#"><img src="img/reviews/bigdown.png" alt="Палец вниз" class="review-like_icon"></a>
+                  <span class="review-like__count">2</span>
                 </div>
               </div>
             </div>
-            <!-- /.reviews-block -->
           </div>
-          <!-- container -->
-        </section>
-        <!-- /.section reviews -->
-      </div>
-      <!-- /.reviews-slide2 -->
-      <div class="reviews-slide">
-        <section class="section reviews">
-          <div class="container">
-            <h2 class="section__title reviews__title">отзывы</h2>
-            <div class="reviews-block">
-              <div class="review-block">
-                <div class="review__avatar">
-                  <img src="img/reviews/girl.png" alt="Аватар">
-                  <img src="img/reviews/marker.png" alt="Маркер" class="review__marker">
-                </div>
-                <span class="review__name">Анна Говорухина</span>
-                <span class="review__text">Authoritatively incubate multidisciplinary partnerships and user friendly
-                  e-markets. Interactively whiteboard client-based leadership skills
-                </span>
-                <div class="review-likes">
-                  <div class="review-like">
-                    <img src="img/reviews/bigup.png" alt="Палец вверх" class="review-like_icon">
-                    <span class="review-like__count">211</span>
-                  </div>
-                  <div class="review-like">
-                    <img src="img/reviews/bigdown.png" alt="Палец вниз" class="review-like_icon">
-                    <span class="review-like__count">5</span>
-                  </div>
-                </div>
+          <div class="reviews-slide">
+            <div class="review-block">
+              <div class="review__avatar">
+                <img src="img/reviews/girl.png" alt="Аватар">
+                <img src="img/reviews/marker.png" alt="Маркер" class="review__marker">
               </div>
-              <div class="review-block">
-                <div class="review__avatar">
-                  <img src="img/reviews/boy.png" alt="Аватар">
-                  <img src="img/reviews/marker.png" alt="Маркер" class="review__marker">
+              <span class="review__name">Анна Говорухина</span>
+              <span class="review__text">Authoritatively incubate multidisciplinary partnerships and user friendly
+                e-markets. Interactively whiteboard client-based leadership skills
+              </span>
+              <div class="review-likes">
+                <div class="review-like">
+                  <a href="#"><img src="img/reviews/bigup.png" alt="Палец вверх" class="review-like_icon"></a>
+                  <span class="review-like__count">211</span>
                 </div>
-                <span class="review__name">Виктор Шукшин</span>
-                <span class="review__text"> Synergistically mesh magnetic leadership rather than cooperative best
-                  practices. Authoritatively initiate.Monotonectally actualize 24/7 metrics
-                </span>
-                <div class="review-likes">
-                  <div class="review-like">
-                    <img src="img/reviews/bigup.png" alt="Палец вверх" class="review-like_icon">
-                    <span class="review-like__count">143</span>
-                  </div>
-                  <div class="review-like">
-                    <img src="img/reviews/bigdown.png" alt="Палец вниз" class="review-like_icon">
-                    <span class="review-like__count">2</span>
-                  </div>
+                <div class="review-like">
+                  <a href="#"><img src="img/reviews/bigdown.png" alt="Палец вниз" class="review-like_icon"></a>
+                  <span class="review-like__count">5</span>
                 </div>
               </div>
             </div>
-            <!-- /.reviews-block -->
           </div>
-          <!-- container -->
-        </section>
-        <!-- /.section reviews -->
+        </div>
+        <!-- /.reviews-slider -->
       </div>
-      <!-- /.reviews-slide3 -->
+      <!-- container -->
+    </section>
+    <!-- /.section reviews -->
 
-    </div>
-    <!-- /.reviews-slider -->
-
-    <section class="section news">
+    <section name="news" class="section news">
+      <a name="news"></a>
       <div class="container">
         <h2 class="section__title news__title">Новости</h2>
         <div class="news-block">
-          <div class="news-article">
-            <div class="news__image">
-              <img src="img/news/pict_1.jpg" alt="Картинка">
+          <a href="#" class="news-article__link">
+            <div class="news-article">
+              <div class="news__image">
+                <img src="img/news/pict_1.jpg" alt="Картинка">
+              </div>
+              <div class="news-caption">
+                <h2 class="news-caption__title">ремонт раковины</h2>
+                <span class="news__date"><strong class="news__day">29</strong>11.2017</span>
+              </div>
+              <p class="news__text">
+                Holisticly syndicate pandemic value and tactical process improvements. Progressively
+                re-engineer parallel portals vis-a-vis low-risk high-yield platforms. Seamlessly reintermediate
+                market-driven platforms rather than excellent infrastructures. Quickly deploy best-of-breed niche
+                markets
+                without business
+              </p>
             </div>
-            <div class="news-caption">
-              <h2 class="news-caption__title">ремонт раковины</h2>
-              <span class="news__date"><strong class="news__day">29</strong>11.2017</span>
+          </a>
+          <a href="#" class="news-article__link">
+            <div class="news-article">
+              <div class="news__image">
+                <img src="img/news/pict_2.jpg" alt="Картинка">
+              </div>
+              <div class="news-caption">
+                <h2 class="news-caption__title">подчинка слива</h2>
+                <span class="news__date"><strong class="news__day">29</strong>11.2017</span>
+              </div>
+              <p class="news__text">
+                Holisticly syndicate pandemic value and tactical process improvements. Progressively
+                re-engineer parallel portals vis-a-vis low-risk high-yield platforms. Seamlessly reintermediate
+                market-driven platforms rather than excellent infrastructures. Quickly deploy best-of-breed niche
+                markets
+                without business
+              </p>
             </div>
-            <p class="news__text">
-              Holisticly syndicate pandemic value and tactical process improvements. Progressively
-              re-engineer parallel portals vis-a-vis low-risk high-yield platforms. Seamlessly reintermediate
-              market-driven platforms rather than excellent infrastructures. Quickly deploy best-of-breed niche markets
-              without business
-            </p>
-          </div>
-          <div class="news-article">
-            <div class="news__image">
-              <img src="img/news/pict_2.jpg" alt="Картинка">
+          </a>
+          <a href="#" class="news-article__link">
+            <div class="news-article">
+              <div class="news__image">
+                <img src="img/news/pict_3.jpg" alt="Картинка">
+              </div>
+              <div class="news-caption">
+                <h2 class="news-caption__title">ремонт раковины</h2>
+                <span class="news__date"><strong class="news__day">29</strong>11.2017</span>
+              </div>
+              <p class="news__text">
+                Holisticly syndicate pandemic value and tactical process improvements. Progressively
+                re-engineer parallel portals vis-a-vis low-risk high-yield platforms. Seamlessly reintermediate
+                market-driven platforms rather than excellent infrastructures. Quickly deploy best-of-breed niche
+                markets
+                without business
+              </p>
             </div>
-            <div class="news-caption">
-              <h2 class="news-caption__title">подчинка слива</h2>
-              <span class="news__date"><strong class="news__day">29</strong>11.2017</span>
-            </div>
-            <p class="news__text">
-              Holisticly syndicate pandemic value and tactical process improvements. Progressively
-              re-engineer parallel portals vis-a-vis low-risk high-yield platforms. Seamlessly reintermediate
-              market-driven platforms rather than excellent infrastructures. Quickly deploy best-of-breed niche markets
-              without business
-            </p>
-          </div>
-          <div class="news-article">
-            <div class="news__image">
-              <img src="img/news/pict_3.jpg" alt="Картинка">
-            </div>
-            <div class="news-caption">
-              <h2 class="news-caption__title">ремонт раковины</h2>
-              <span class="news__date"><strong class="news__day">29</strong>11.2017</span>
-            </div>
-            <p class="news__text">
-              Holisticly syndicate pandemic value and tactical process improvements. Progressively
-              re-engineer parallel portals vis-a-vis low-risk high-yield platforms. Seamlessly reintermediate
-              market-driven platforms rather than excellent infrastructures. Quickly deploy best-of-breed niche markets
-              without business
-            </p>
-          </div>
+          </a>
         </div>
         <!-- /.news-block -->
         <button class="button news__button">читать все новости</button>
@@ -479,6 +413,7 @@
               alt=""></a>
         </div>
         <div class="footer-info">
+          <a name="footer"></a>
           <div class="footer-mail">
             <div class="footer-mail__icon"><img src="img/footer/email.png" alt=""></div>
             <span class="footer-mail__text"><a href="mailto:infosanteh@gmail.com">infosanteh@gmail.com</a></span>

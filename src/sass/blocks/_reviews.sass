@@ -3,7 +3,8 @@
   flex-direction: column
   justify-content: space-between
   align-items: center
-  width: 44%
+  width: 85%
+  margin: auto
 .review  
   &__avatar
     position: relative
@@ -49,18 +50,13 @@
   position: relative
   margin-top: 146px
   background-color: #010101
-  &__title
-  &-block
-    display: flex
-    justify-content: space-between
+  &-slider
+    margin: auto
     padding-top: 112px
     padding-bottom: 172px
-  &-slider
     width: 100%
   &-slide
     outline: none
-    width: 100%
-  &-block
     width: 100%
   &__dots
     position: absolute
@@ -128,10 +124,37 @@
         color: #fefbfb
         font-size: 10px  
 
+@media (max-width: 575.98px) 
+  .reviews
+    &-slider
+      padding-top: 60px
+      padding-bottom: 80px
+      width: 100%
+
+  .review
+    &-block
+      width: 80%  
+    &__avatar
+      width: 90px
+      height: 90px
+      margin-bottom: 10px
+    &__marker
+      width: 25px
+      height: 25px
+    &__name
+      margin-bottom: 10px
+      font-size: 14px
+    &__text
+      font-size: 14px
+      line-height: 1.2
+    &-likes
+      width: 50%           
+
+
 @media ( max-width: 450px ) 
   .review
     &-block
-      width: 48%  
+      width: 80%  
     &__avatar
       width: 90px
       height: 90px

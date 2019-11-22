@@ -1,0 +1,35 @@
+{
+  "name": "repair",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IgorGaev/repair.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IgorGaev/repair/issues"
+  },
+  "homepage": "https://github.com/IgorGaev/repair#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-cache": "^1.1.3",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-imagemin": "^6.1.1",
+    "gulp-jsmin": "^0.1.5",
+    "gulp-tinify": "^1.0.2"
+  },
+  "dependencies": {
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-tinifier": "^1.0.2",
+    "imagemin-jpeg-recompress": "^6.0.0",
+    "imagemin-pngquant": "^8.0.0",
+    "imagemin-pngquant-gfw": "^0.2.0"
+  }
+}

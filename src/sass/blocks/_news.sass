@@ -9,8 +9,13 @@
     display: flex
     justify-content: space-between
     margin-bottom: 70px
+    flex-wrap: wrap
   &-article
-    flex-basis: 32%
+    &__link
+      flex-basis: 32%
+    &:hover
+      .news__text
+        text-decoration: underline
   &__image
     margin-bottom: 30px
   &-caption
@@ -60,6 +65,16 @@
       flex-direction: column
       align-items: flex-start
 
+@media (max-width: 991.98px)
+  .news
+    &-article
+      &__link
+        margin-top: 20px
+        flex-basis: 48%
+      &:hover
+        .news__text
+          text-decoration: none
+
 
 @media (max-width: 767.98px)
   .news
@@ -104,6 +119,13 @@
     &__button
       font-size: 18px
       padding: 12px 20px
+
+@media (max-width: 575.98px)
+  .news
+    &-caption
+      width: 90%
+    &__text
+      max-width: 90%
 
 @media ( max-width: 450px )
   .news

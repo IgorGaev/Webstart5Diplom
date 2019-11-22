@@ -82,7 +82,8 @@
   display: none
   color: $black-text
   +bold
-  font-size: 16px  
+  font-size: 16px
+  width: 28px
 
 @media (max-width: 1199.98px)
   .header
@@ -119,12 +120,15 @@
 
   .menu-trigger 
     display: block
+    &:active
+      outline: none
+      
 
   .header
     &-navbar
       padding-top: 10px
       padding-bottom: 10px
-      margin-top: 30px
+      margin-top: 23px
       display: none
       flex-direction: column
       position: absolute
@@ -133,7 +137,7 @@
       margin-left: -10px
       padding-left: 10px
       z-index: 6
-      opacity: 0.9
+      opacity: 1
       +bold
       &__item
         padding: 0px
