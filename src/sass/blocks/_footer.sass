@@ -71,8 +71,7 @@
     left: 0
     background-color: #ffffff
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4)
-    width: 397px
-    height: 385px
+    width: 34%
     &__title
       color: #030303
       +ext
@@ -101,24 +100,40 @@
       color: $text-color
       font-size: 20px
       text-transform: uppercase
+  &-input__wrap
+    margin-bottom: 40px
+
+
+@media (max-width: 1199.98px)
+  .footer
+    &-form
+      padding-right: 30px
+      padding-left: 30px
 
 @media (max-width: 991.98px)
   .footer
     &-social
       padding-left: 0
     &-form
-      width: 345px
-      height: 365px
-      padding: 25px
-      top: -450px
-    &-block  
+      padding: 30px 25px
+      top: -350px
+      width: 40%
+      &__title
+        margin-bottom: 20px
+      &__input
+        font-size: 16px  
+    &-block
+      padding-bottom: 15px
       flex-direction: column
       justify-content: space-around
+    &-input__wrap
+      margin-bottom: 20px  
 
 @media (max-width: 767.98px)
   .footer
     &-block
       padding: 10px 0
+      padding-bottom: 20px
     &-adress
       &__text
         font-size: 18px
@@ -126,27 +141,48 @@
       &__icon
         margin-right: 20px
     &-info
+      width: 80%
+      justify-content: space-between
       & a
-        font-size: 16px    
+        font-size: 16px
+    &-form
+      margin: auto
+      margin-top: 10px
+      width: 70%
+      position: static
+
+@media (max-width: 575.98px)  
+  .footer
+    &-info
+      flex-direction: column
+      &__stock
+        display: none
+    &-adress
+      margin-bottom: 10px
+      &__text
+        font-size: 15px
+    &-social
+      margin-bottom: 10px    
+    &-mail
+      margin-bottom: 10px  
 
 @media ( max-width: 450px )
   .footer
     &-block
     &-adress
-      margin-bottom: 15px
+      margin-bottom: 10px
       &__text
         font-size: 15px
     &-social
-      margin-bottom: 15px    
+      margin-bottom: 10px    
     &-info
       flex-direction: column
       &__stock
         display: none
     &-mail
-      margin-bottom: 15px
+      margin-bottom: 10px
     &-form
-      margin-top: 30px
-      margin-bottom: 30px
+      margin-top: 10px
       width: 100%
       position: static
       height: 200px

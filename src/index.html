@@ -12,6 +12,21 @@
 </head>
 
 <body>
+  <!-- Начало Бургер меню -->
+  <a href="#menu" class="menu-link">
+    <span></span>
+  </a>
+  <div class="menu">
+    <ul>
+      <li><a href="#service">Услуги</a></li>
+      <li><a href="#why">Цены</a></li>
+      <li><a href="#reviews">Отзывы</a></li>
+      <li><a href="#news">Новости</a></li>
+      <li><a href="#footer">Контакты</a></li>
+    </ul>
+  </div>
+  <!-- конец бургер меню -->
+  
   <header class="header">
     <div class="container">
       <div class="header-block">
@@ -20,7 +35,6 @@
             <a href="index.html"><img src="img/header/header_logo.png" alt="Логотип"></a>
           </div>
           <nav>
-            <a href="#" class="menu-trigger"><img src="img/header/menu.png" alt=""></a>
             <ul class="header-navbar">
               <li class="header-navbar__item"><a class="header-navbar__link" href="#service">Услуги</a></li>
               <li class="header-navbar__item"><a class="header-navbar__link" href="#why">Цены</a></li>
@@ -33,8 +47,7 @@
         <div class="header-block__right">
           <div class="header__contacts">
             <img src="img/header/phone-receiver.png" alt="Трубка">
-            <a class="header__phone" href="tel:+7(863)342-22-21">+7 (863) <span
-                class="header__phone_bold">342-22-21</span></a>
+            <a class="header__phone" href="tel:+7(863)342-22-21">+7 (863) <span class="header__phone_bold">342-22-21</span></a>
           </div>
           <button id="button" class="button header__button">Заказать звонок</button>
         </div>
@@ -45,10 +58,9 @@
   </header>
 
   <main>
-      <a name="hero"></a>
     <div class="hero-slider">
       <div class="hero-slide">
-        <section class="section hero slide1">
+        <section id="hero" class="section hero slide1">
           <div class="container">
             <div class="hero-block">
               <h1 class="hero__title">Наша бригада по монтированию отопления и&nbsp;сантехники</h1>
@@ -115,8 +127,7 @@
     </div>
     <!-- /.hero-slider -->
 
-    <section class="section service">
-      <a name="service"></a>
+    <section id="service" class="section service">
       <div class="container">
         <h2 class="section__title service__title">услуги</h2>
         <div class="service-block">
@@ -181,7 +192,7 @@
     </section>
     <!-- /.section service -->
 
-    <section class="section why">
+    <section id="why" class="section why">
       <a name="why"></a>
       <div class="container">
         <h2 class="section__title why__title">почему мы?</h2>
@@ -234,7 +245,7 @@
     <!-- /.section why -->
 
     
-    <section class="section reviews">
+    <section id="reviews" class="section reviews">
       <a name="reviews"></a>
       <div class="container">
         <h2 class="section__title reviews__title">отзывы</h2>
@@ -312,7 +323,7 @@
     </section>
     <!-- /.section reviews -->
 
-    <section name="news" class="section news">
+    <section id="news" class="section news">
       <a name="news"></a>
       <div class="container">
         <h2 class="section__title news__title">Новости</h2>
@@ -386,10 +397,10 @@
       <div class="footer-form">
         <h2 class="footer-form__title">оставьте <strong>заявку</strong></h2>
         <form id="footer__form" action="php/mail.php" method="POST">
-          <div class="input-wrap">
+          <div class="footer-input__wrap input-wrap">
             <input name="username" type="text" class="footer-form__input input" placeholder="Введите Ваше имя">
           </div>
-          <div class="input-wrap ">
+          <div class="footer-input__wrap input-wrap ">
             <input name="phone" type="tel" class="footer-form__input phone input"
               placeholder="Введите Ваш номер телефона">
           </div>
@@ -413,7 +424,6 @@
               alt=""></a>
         </div>
         <div class="footer-info">
-          <a name="footer"></a>
           <div class="footer-mail">
             <div class="footer-mail__icon"><img src="img/footer/email.png" alt=""></div>
             <span class="footer-mail__text"><a href="mailto:infosanteh@gmail.com">infosanteh@gmail.com</a></span>
@@ -429,6 +439,7 @@
     </div>
     <!-- /.container -->
   </footer>
+  <a name="footer"></a>
   <!-- /.footer -->
 
   <!-- Модальное окно успешной отправки формы-->

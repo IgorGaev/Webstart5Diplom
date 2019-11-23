@@ -71,6 +71,8 @@
       height: 20px
       background-color: #ffffff
       display: inline-block
+      &:hover
+          cursor: pointer      
       button
         display: none
     .slick-active
@@ -91,11 +93,12 @@
       & li
         margin: 0 10px
         width: 10px
-        height: 10px  
+        height: 10px
+        
 
   .review
     &-block
-      width: 48%  
+      width: 71%  
     &__avatar
       width: 90px
       height: 90px
@@ -112,7 +115,7 @@
     &-likes
       justify-content: space-between
       align-items: flex-start
-      width: 30%
+      width: 22%
     &-like
       &_icon
         width: 15px
@@ -148,13 +151,13 @@
       font-size: 14px
       line-height: 1.2
     &-likes
-      width: 50%           
+      width: 25%           
 
 
 @media ( max-width: 450px ) 
   .review
     &-block
-      width: 80%  
+      width: 100%  
     &__avatar
       width: 90px
       height: 90px
@@ -169,4 +172,4 @@
       font-size: 14px
       line-height: 1.2
     &-likes
-      width: 50%       
+      width: 25%       

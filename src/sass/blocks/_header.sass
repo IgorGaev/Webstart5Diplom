@@ -1,7 +1,7 @@
 .header
   background-image: url('../img/header/header_bg.png')
   background-position: center right
-  background-size: 37%
+  background-size: 45%
   background-repeat: repeat-y
   min-height: 76px
   &-block
@@ -12,6 +12,8 @@
     &__left
       display: flex
       align-items: center
+      background-color: #fff
+      padding-right: 65px
     &__right
       display: flex
       justify-content: flex-end
@@ -78,24 +80,16 @@
     font-size: 14px
     text-transform: none
 
-.menu-trigger 
-  display: none
-  color: $black-text
-  +bold
-  font-size: 16px
-  width: 28px
 
 @media (max-width: 1199.98px)
   .header
-    background-size: 42%
+    background-size: 0
+    &-block
+      &__left
+        padding-right: 10px
     &__logo
       margin-right: 30px
-    &-navbar
-      &__link
-        &:hover
-          color: $black-text
-          &::after
-            display: none
+    &-navbar  
       &__item
         padding-right: 20px
         padding-left: 20px  
@@ -103,26 +97,26 @@
           padding-right: 20px
         &:last-child
           padding-left: 20px
+    &__button
+      margin-left: 20px    
 
 @media (max-width: 991.98px)
   .header
     background-size: 0%
     &-navbar
       &__link
+        &:hover
+          color: $black-text
+          &::after
+            display: none
     &__contacts
       display: none
-    &__button
-        padding: 7px 10px
-        font-size: 12px
-        margin-left: 0px    
+    
 
 @media (max-width: 768px)
 
-  .menu-trigger 
-    display: block
-    &:active
-      outline: none
-      
+  .menu-link 
+    display: block     
 
   .header
     &-navbar
@@ -153,7 +147,7 @@
         text-transform: uppercase
     &__button
       +bold
-      padding: 7px 10px
+      padding: 7px 15px
       font-size: 12px
       margin-left: 0px
 
