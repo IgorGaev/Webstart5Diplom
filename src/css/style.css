@@ -977,7 +977,7 @@ label.invalid {
           animation-name: flipInX;
 }
 
-/* Шапка */
+/* Блоки */
 .menu {
   font-family: 'Proxima Nova Semi', sans-serif;
   font-weight: 600;
@@ -1066,7 +1066,7 @@ label.invalid {
   position: absolute;
   left: 50%;
   top: 50%;
-  margin-top: -6px;
+  margin-top: -7px;
   margin-left: -9px;
   background-color: #333;
   content: '';
@@ -1101,6 +1101,66 @@ label.invalid {
   -webkit-transform: rotate(-135deg);
           transform: rotate(-135deg);
   margin-top: 0;
+}
+
+#button-up {
+  display: inline-block;
+  background-color: #ffc800;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  -webkit-transition: background-color .3s, opacity .5s, visibility .5s;
+  transition: background-color .3s, opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 10;
+}
+
+#button-up:hover {
+  cursor: pointer;
+  background-color: #ffd333;
+}
+
+#button-up:active {
+  background-color: #cca000;
+}
+
+#button-up.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+#button-up::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+
+@media (max-width: 992px) {
+  #button-up:hover {
+    background-color: #ffc800;
+  }
+}
+
+@media (max-width: 798px) {
+  #button-up {
+    width: 30px;
+    height: 30px;
+    bottom: 20px;
+    right: 20px;
+  }
+  #button-up::after {
+    font-size: 1em;
+    line-height: 30px;
+  }
 }
 
 .header {
@@ -2714,8 +2774,6 @@ label.invalid {
   }
 }
 
-/* ===================================================== */
-/* Hero */
 .hero {
   padding-top: 181px;
   padding-bottom: 272px;
@@ -2863,8 +2921,6 @@ label.invalid {
   background-image: url("../img/hero/hero_bg6.png"), url("../img/hero/hero_bg2.jpg");
 }
 
-/* ======================================================= */
-/* Блок services */
 .service {
   background-color: #f1f1f1;
   margin-bottom: 146px;
@@ -3043,8 +3099,6 @@ label.invalid {
   }
 }
 
-/* ======================================================= */
-/* Стили для подвала */
 .footer {
   background-color: #000000;
 }

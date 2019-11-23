@@ -1,6 +1,6 @@
 $(document).ready(function () {
   $('.hero-slider').slick({
-    autoplay: 0,
+    autoplay: 1,
     dots: true,
     arrows: false,
     autoplaySpeed: 4000,
