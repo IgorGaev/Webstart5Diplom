@@ -36,17 +36,18 @@
       background-color: $main-color
   &__title
     color: $main-color
-    +semi
-    font-size: 35px
+    font-size: 36px
     font-weight: 400
     text-transform: uppercase
     margin-bottom: 12px
   &__subtitle
+    font-weight: 400
     display: block
     color: #fffffe
     font-size: 35px
     margin-bottom: 24px
   &__text
+    font-weight: 400
     display: block
     opacity: 0.42
     color: #fffffe
@@ -88,7 +89,12 @@
 @media (max-width: 575.98px)
   .hero
     &__title
+      +reg
       font-size: 22px
+    &__subtitle
+      font-size: 18px
+    &__text
+      font-size: 16px  
 
 
 .slide2

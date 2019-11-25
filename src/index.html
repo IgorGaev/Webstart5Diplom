@@ -11,6 +11,26 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () {
+        (m[i].a = m[i].a || []).push(arguments)
+      };
+      m[i].l = 1 * new Date();
+      k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k,
+        a)
+    })(window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym");
+    ym(56364280, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true,
+      webvisor: true,
+      trackHash: true
+    });
+  </script> <noscript>
+    <div><img src="https://mc.yandex.ru/watch/56364280" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript> <!-- /Yandex.Metrika counter -->
 </head>
 
 <body>
@@ -36,7 +56,7 @@
           <div class="header__logo">
             <a href="index.html"><img src="img/header/header_logo.png" alt="Логотип"></a>
           </div>
-          <nav>
+          <nav id="menu">
             <ul class="header-navbar">
               <li class="header-navbar__item"><a class="header-navbar__link" href="#service">Услуги</a></li>
               <li class="header-navbar__item"><a class="header-navbar__link" href="#why">Цены</a></li>
@@ -51,7 +71,8 @@
             <img src="img/header/phone-receiver.png" alt="Трубка">
             <a class="header__phone" href="tel:+7(863)342-22-21">+7 (863) <span class="header__phone_bold">342-22-21</span></a>
           </div>
-          <button id="button" class="button header__button">Заказать звонок</button>
+          <button id="button" class="button header__button"
+            onclick="ym(56364280, 'reachGoal', 'button'); return true;">Заказать звонок</button>
         </div>
       </div>
       <!-- /.header-block -->
@@ -133,7 +154,7 @@
       <div class="container">
         <h2 class="section__title service__title">услуги</h2>
         <div class="service-block">
-          <a class="service-card" href="#">
+          <div class="service-card">
             <div class="service-card__image">
               <img src="img/service/pict-1.jpg" alt="Картинка">
             </div>
@@ -141,8 +162,8 @@
               <span class="service-card__subtitle">Монтаж систем<br>отопления</span>
               <button class="button service-card__button">узнать цену</button>
             </div>
-          </a>
-          <a class="service-card" href="#">
+          </div>
+          <div class="service-card">
             <div class="service-card__image">
               <img src="img/service/pict-2.jpg" alt="Картинка">
             </div>
@@ -150,8 +171,8 @@
               <span class="service-card__subtitle">Монтаж сантехнического оборудования</span>
               <button class="button service-card__button">узнать цену</button>
             </div>
-          </a>
-          <a class="service-card" href="#">
+          </div>
+          <div class="service-card">
             <div class="service-card__image">
               <img src="img/service/pict-3.jpg" alt="Картинка">
             </div>
@@ -159,8 +180,8 @@
               <span class="service-card__subtitle">Монтаж канализационного оборудования</span>
               <button class="button service-card__button">узнать цену</button>
             </div>
-          </a>
-          <a class="service-card" href="#">
+          </div>
+          <div class="service-card">
             <div class="service-card__image">
               <img src="img/service/pict-1.jpg" alt="Картинка">
             </div>
@@ -168,8 +189,8 @@
               <span class="service-card__subtitle">Монтаж систем<br>отопления</span>
               <button class="button service-card__button">узнать цену</button>
             </div>
-          </a>
-          <a class="service-card" href="#">
+          </div>
+          <div class="service-card">
             <div class="service-card__image">
               <img src="img/service/pict-2.jpg" alt="Картинка">
             </div>
@@ -177,8 +198,8 @@
               <span class="service-card__subtitle">Монтаж сантехнического оборудования</span>
               <button class="button service-card__button">узнать цену</button>
             </div>
-          </a>
-          <a class="service-card" href="#">
+          </div>
+          <div class="service-card">
             <div class="service-card__image">
               <img src="img/service/pict-3.jpg" alt="Картинка">
             </div>
@@ -186,7 +207,7 @@
               <span class="service-card__subtitle">Монтаж канализационного оборудования</span>
               <button class="button service-card__button">узнать цену</button>
             </div>
-          </a>
+          </div>
         </div>
         <!-- /.service-block -->
       </div>
@@ -393,7 +414,7 @@
     <!-- /.section news -->
   </main>
 
-  <footer class="footer">
+  <footer id="footer" class="footer">
     <div class="map" id="map"></div>
     <div class="container">
       <div class="footer-form">
@@ -406,7 +427,8 @@
             <input name="phone" type="tel" class="footer-form__input phone input"
               placeholder="Введите Ваш номер телефона">
           </div>
-          <button type="submit" class="button footer-form__button">заказать звонок</button>
+          <button type="submit" class="button footer-form__button"
+            onclick="ym(56364280, 'reachGoal', 'footer-button'); return true;">заказать звонок</button>
         </form>
       </div>
       <div class="footer-block">
@@ -468,10 +490,10 @@
         </span>
         <div class="modal-form__inputs">
           <div class="modal-form__input">
-            <input name="username" type="text" class="input" placeholder="Ваше имя">
+            <input autocomplete="off" name="username" type="text" class="modal__input" placeholder="Ваше имя">
           </div>
           <div class="modal-form__input">
-            <input name="phone" type="tel" class="phone input" placeholder="Ваш телефон">
+            <input autocomplete="off" name="phone" type="tel" class="phone modal__input" placeholder="Ваш телефон">
           </div>
         </div>
         <button class="button modal-form__button">

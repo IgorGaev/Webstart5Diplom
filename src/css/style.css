@@ -1026,11 +1026,6 @@ label.invalid {
   transition: all 0.2s;
 }
 
-.menu ul a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  text-decoration: none;
-}
-
 .menu-link {
   z-index: 9;
   display: none;
@@ -1039,8 +1034,8 @@ label.invalid {
   background-color: #fff;
   border-radius: 50%;
   position: fixed;
-  top: 20px;
-  left: 20px;
+  top: 15px;
+  left: 15px;
   -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
           box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
 }
@@ -1111,13 +1106,13 @@ label.invalid {
   text-align: center;
   border-radius: 4px;
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: 85px;
+  right: 35px;
   -webkit-transition: background-color .3s, opacity .5s, visibility .5s;
   transition: background-color .3s, opacity .5s, visibility .5s;
   opacity: 0;
   visibility: hidden;
-  z-index: 10;
+  z-index: 7;
 }
 
 #button-up:hover {
@@ -1210,6 +1205,8 @@ label.invalid {
 }
 
 .header__logo {
+  padding-top: 7px;
+  padding-bottom: 3px;
   margin-right: 135px;
 }
 
@@ -1276,7 +1273,7 @@ label.invalid {
   position: absolute;
   left: 0;
   bottom: -2px;
-  z-index: -1;
+  z-index: 1;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
@@ -1350,6 +1347,9 @@ label.invalid {
 @media (max-width: 768px) {
   .menu-link {
     display: block;
+  }
+  .header__logo {
+    margin-left: 50px;
   }
   .header-navbar {
     padding-top: 10px;
@@ -2058,6 +2058,9 @@ label.invalid {
   .news-article:hover .news__text {
     text-decoration: none;
   }
+  .news-article:hover .news-caption__title {
+    text-decoration: none;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -2205,10 +2208,24 @@ label.invalid {
 }
 
 .footer-social__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 50%;
   width: 26px;
   height: 26px;
   margin-right: 10px;
+  background-color: #fff;
+}
+
+.footer-social__icon img {
+  width: 60%;
 }
 
 .footer-social__icon:hover {
@@ -2493,6 +2510,22 @@ label.invalid {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   display: none;
+}
+
+.modal__input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px solid #dddddd;
+  color: #020202;
+  font-size: 15px;
+  line-height: 24px;
+  padding: 20px 24px;
+}
+
+.modal__input:focus {
+  border: 1px solid #cca800;
+  outline: none;
 }
 
 .modal_active {
@@ -2833,16 +2866,14 @@ label.invalid {
 
 .hero__title {
   color: #ffc800;
-  font-family: 'Proxima Nova Semi', sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 35px;
+  font-size: 36px;
   font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 12px;
 }
 
 .hero__subtitle {
+  font-weight: 400;
   display: block;
   color: #fffffe;
   font-size: 35px;
@@ -2850,6 +2881,7 @@ label.invalid {
 }
 
 .hero__text {
+  font-weight: 400;
   display: block;
   opacity: 0.42;
   color: #fffffe;
@@ -2905,7 +2937,16 @@ label.invalid {
 
 @media (max-width: 575.98px) {
   .hero__title {
+    font-family: "Proxima Nova Rg", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 22px;
+  }
+  .hero__subtitle {
+    font-size: 18px;
+  }
+  .hero__text {
+    font-size: 16px;
   }
 }
 
@@ -2940,8 +2981,6 @@ label.invalid {
 }
 
 .service-card {
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
   font-family: "Proxima Nova Rg", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -2949,11 +2988,14 @@ label.invalid {
   max-width: 377px;
   max-height: 236px;
   margin-bottom: 14px;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 
 .service-card:hover {
-  -webkit-filter: none;
-          filter: none;
+  -webkit-filter: grayscale(1%);
+          filter: grayscale(1%);
+  cursor: pointer;
 }
 
 .service-card__image::after {
@@ -3015,7 +3057,7 @@ label.invalid {
   position: relative;
 }
 
-.service-card__button:hover::after {
+.service-card__button:focus::after {
   font-family: "Proxima Nova Rg", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -3028,7 +3070,8 @@ label.invalid {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #ffc800;
+  background-color: #020202;
+  color: #fff;
 }
 
 @media (max-width: 1199.98px) {
@@ -3054,8 +3097,8 @@ label.invalid {
     margin-bottom: 10px;
   }
   .service-card:hover {
-    -webkit-filter: none;
-            filter: none;
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
   }
   .service-card__text {
     padding-top: 55px;
@@ -3067,9 +3110,6 @@ label.invalid {
   }
   .service-card__button {
     font-size: 12px;
-  }
-  .service-card__button:hover::after {
-    display: none;
   }
 }
 
@@ -3154,10 +3194,24 @@ label.invalid {
 }
 
 .footer-social__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 50%;
   width: 26px;
   height: 26px;
   margin-right: 10px;
+  background-color: #fff;
+}
+
+.footer-social__icon img {
+  width: 60%;
 }
 
 .footer-social__icon:hover {

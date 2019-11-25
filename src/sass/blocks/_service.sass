@@ -8,15 +8,16 @@
     flex-wrap: wrap-reverse
     justify-content: space-between
   &-card
-    filter: grayscale(100%)
     +reg
     position: relative
     max-width: 377px
     max-height: 236px
     margin-bottom: 14px
+    filter: grayscale(100%)
     &:hover
-      filter: none
-    &__image
+        filter: grayscale(1%)
+        cursor: pointer
+    &__image      
       &::after
         position: absolute
         top: 0
@@ -29,6 +30,7 @@
         height: 100%
         background-color:#000
         opacity: 0.2
+        
     &__text
       position: absolute
       width: 100%
@@ -57,7 +59,7 @@
       font-size: 15px
       color: $text-color
       position: relative
-      &:hover
+      &:focus
         &::after
           +bold
           content: 'от 500 р.'
@@ -69,7 +71,8 @@
           position: absolute
           top: 0
           left: 0
-          background-color: $main-color
+          background-color: $text-color
+          color: #fff
 
 @media (max-width: 1199.98px)
   .service    
@@ -88,7 +91,7 @@
       max-width: 350px
       margin-bottom: 10px
       &:hover
-        filter: none
+        filter: grayscale(100%)
       &__text
         padding-top: 55px
         padding-bottom: 55px        
@@ -97,9 +100,8 @@
         font-size: 18px
       &__button
         font-size: 12px
-        &:hover
-          &::after
-            display: none    
+
+          
 
 @media (max-width: 767.98px)
   .service
